@@ -11,6 +11,12 @@
 3.se verde -> git commit -m "nome do commit"
 4.se td ok! git push (atualiza no github)
 
+5. git clone endereço.git. (comando para copiar do github dentro da pasta do projeto)
+5.1 npm install (dentro da pasta do projeto p instalar node_modules)
+
+#------------ para remover usuario anterior
+git config --system --unset credential.helper
+
 #------ Angular
 1.ng new nome-projeto (cria um projeto)
 2.ng serve -o (rodar e abrir o projeto - precisa estar dentro da pasta do projeto)
@@ -20,3 +26,4 @@ primeiro arquivo a ser executado?
 r- index.html dentro de scr
 criar um componete vem 4 arquivos
 r- um html um css um spec.ts e um ts
+
