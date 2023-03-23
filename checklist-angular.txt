@@ -12,7 +12,8 @@
 4.se td ok! git push (atualiza no github)
 
 5. git clone endereço.git. (comando para copiar do github dentro da pasta do projeto)
-5.1 npm install (dentro da pasta do projeto p instalar node_modules)
+5.1 cd my-app
+5.2 npm install (dentro da pasta do projeto p instalar node_modules)
 
 #------------ para remover usuario anterior
 git config --system --unset credential.helper
@@ -20,6 +21,7 @@ git config --system --unset credential.helper
 #------ Angular
 1.ng new nome-projeto (cria um projeto)
 2.ng serve -o (rodar e abrir o projeto - precisa estar dentro da pasta do projeto)
+3.ng g c component/nomedocomponente --skip-tests (criar um novo componente)
 
 
 primeiro arquivo a ser executado?
