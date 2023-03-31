@@ -29,3 +29,7 @@ r- index.html dentro de scr
 criar um componete vem 4 arquivos
 r- um html um css um spec.ts e um ts
 
+
+git config --global user.name "ingrid"
+git config --global user.email "emaildogit@"
+
