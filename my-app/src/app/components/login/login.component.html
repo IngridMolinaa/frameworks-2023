@@ -1,14 +1,23 @@
     <div class="container">
     <div class="login">
         <h2>Sign in</h2>
+
+        <div *ngIf="isError" class="error">
+            <i class='bx bx-heart-circle' ></i>
+            <span>User or password incorrect!</span>
+    
+    
+        </div>
+
     <div class="input">
         <i class='bx bx-envelope-open'></i>
         <input type="text" name="email" id="email" placeholder="E-mail">
 
-    </div>
+    </div>    
+
     <div class="input">
         <i class='bx bxs-lock' ></i>
-        <input type="text" name="password" id="password" placeholder="Password">
+        <input type="password" name="password" id="password" placeholder="Password">
         <i class='bx bx-low-vision' ></i>
     </div>
     
@@ -19,7 +28,7 @@
     </div>
         <h4>Forgot password?</h4>
     </div>
-        <button>SING IN</button>
+        <button (click)="login()">SING IN</button>
         <h3>Don't have an account? Creat</h3>
     </div>
 

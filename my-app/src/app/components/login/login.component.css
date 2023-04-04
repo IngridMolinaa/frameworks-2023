@@ -6,7 +6,7 @@
 
 }
 .container {
-    background: #9733ff;
+    background: linear-gradient(#33e0ff, rgb(38, 153, 105));
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,10 +17,10 @@
 }
 
 .login {
-    background: #fff;
+    background:  #fff;
     width: 450px;
     height: 420px;
-    box-shadow: 10px 10px 50px 10px rgb(233, 85, 196);
+    box-shadow: 0px 0px 50px 20px rgb(230, 126, 186);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 .input {
-    box-shadow: 3px 5px 10px 5px rgba(235, 95, 188, 0.589);
+    box-shadow: 3px 3px 10px 5px rgba(235, 95, 188, 0.589);
     width: 350px;
     height: 35px;
     border-radius: 15px;
@@ -48,11 +48,12 @@
     border: none;
     outline: none;
     margin-left: 5px;
+    background: transparent;
 }
 
 i {
     font-size: 25px;
-    color:rgb(219, 84, 197);
+    color:rgb(226, 130, 210);
     
 
 }
@@ -81,11 +82,36 @@ h4 {
 
 button {
     width: 150px;
-    height: 30px;
+    height: 40px;
     border-radius: 15px;
     margin: 30px;
     background: linear-gradient(#e663d0, #994aee);
     border: 0;
     color: #fff;
-    box-shadow: 5px 5px 6px  #994aee;
+    box-shadow: 5px 5px 6px  #db4aee;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(125%);
+
+    
+}
+
+.error {
+    border: 2px solid rgb(243, 120, 181);
+    margin-top: 5px;
+    width: 280px;
+    height: 35px;
+    background: rgb(198, 239, 247);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: rgb(190, 62, 163);
+
+}
+
+.error i {
+    margin-right: 5px;
+
 }
