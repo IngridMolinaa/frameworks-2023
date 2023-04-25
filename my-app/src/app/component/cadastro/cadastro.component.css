@@ -16,7 +16,7 @@
 
 }
 
-.login {
+.cadastro {
     background:  #fff;
     width: 450px;
     height: 420px;
@@ -31,11 +31,11 @@
 }
 
 .input {
-    box-shadow: 3px 3px 10px 5px rgba(235, 95, 188, 0.589);
+    box-shadow: 3px 5px 10px 5px rgba(235, 95, 188, 0.589);
     width: 350px;
-    height: 35px;
+    height: 200px;
     border-radius: 15px;
-    margin: 20px;
+    margin: 15px;
     padding-left: 8px;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
 i {
     font-size: 25px;
     color:rgb(226, 130, 210);
-    
+
 
 }
 
@@ -70,21 +70,14 @@ i {
     gap: 5px;
 
 }
-h3 {
-    color: #6e6e6e;
-}
-h4 {
-    font-size: 13px;
-    font-weight: 800;
-    color: #868585;
 
-}
+
 
 button {
-    width: 150px;
+    width: 100px;
     height: 40px;
     border-radius: 15px;
-    margin: 30px;
+    margin: 20px;
     background: linear-gradient(#e663d0, #994aee);
     border: 0;
     color: #fff;
@@ -95,7 +88,7 @@ button {
 button:hover {
     filter: brightness(125%);
 
-    
+
 }
 
 .error {
@@ -103,15 +96,30 @@ button:hover {
     margin-top: 5px;
     width: 280px;
     height: 35px;
-    background: rgb(198, 239, 247);
+    background: rgb(184, 44, 34);
     border-radius: 5px;
     display: flex;
     align-items: center;
-    color: rgb(190, 62, 163);
+    color: rgb(184, 66, 66);
 
 }
 
 .error i {
     margin-right: 5px;
 
+}
+
+.isAprovado {
+    border: 2px solid green;
+    margin-top: 5px;
+    width: 280px;
+    background: green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    color: black;
+    font-size: 15px;
 }

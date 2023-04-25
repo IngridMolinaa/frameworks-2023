@@ -1,0 +1,39 @@
+.container {
+    border:  3px solid rgb(240, 239, 160);
+    margin: 20px auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 75px 1fr 75px;
+    grid-template-columns: 200px 1fr;
+
+    gap: 10px;
+}
+
+.item {
+    background: rgb(231, 58, 130);
+    
+}
+
+.item-1, .item-4 {
+    grid-column: 1/4;
+    border-radius: 10px
+
+
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+}
+
+.item-3 {
+    background: rgb(175, 92, 243);
+    border-radius: 10px;
+}
+
+.item-2 {
+    background: rgb(109, 241, 228);
+    border-radius: 10px;
+}
+
+.item-5, .item-6, .item-7{
+    background: purple;
+}
