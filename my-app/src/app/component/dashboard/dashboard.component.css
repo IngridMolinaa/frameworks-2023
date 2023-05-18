@@ -1,16 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap');
+
+
 :root {
   --bg-menu: #e2e9ef;
   --shadow: #696969;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', serif;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+a {
+  font-size: 12px;
+  color: #6957f8;
+}
+
+h5 {
+  font-size: 12px;
+}
+
 .container {
-  margin: 20px auto;
-  width: 90%;
+  width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 200px 1fr 350px;
-  box-shadow: 3px 3px 15px #696969;
-  border-radius: 10px;
+  grid-template-columns: 200px 1fr 380px;
 }
 
 .user-info {
@@ -62,7 +82,7 @@ background: #f7f8fa;
 .content {
   display: grid;
   grid-template-rows: 100px 200px 1fr;
- padding: 40px;
+ padding: 30px;
 }
 
 .content .search {
@@ -102,7 +122,7 @@ background: #f7f8fa;
 
 .user,
 user-info {
-  background: linear-gradient(rgb(250, 209, 216) , rgb(182, 16, 182));
+  background:  #fc89f7;
   border-radius: 5px;
 }
 .content .info {
@@ -150,11 +170,7 @@ user-info {
   font-size: 18px;
   font-weight: 600;
 
-
-
 }
-
-
 
 .content .adm .team .title .ball{
   background: #43af74;
@@ -170,14 +186,14 @@ user-info {
 
 }
 .content .adm .team .title .ball i{
-  color: #fff;
+  color: #eaeaea;
   font-size: 22px;
 }
 
-.container .user{
+.container .user {
   display: grid;
-  grid-template-rows: 100px 180px 120px;
-  gap: 10px;
+  grid-template-rows: 70px 180px 120px;
+  padding: 0 25px;
 
 
 
@@ -187,11 +203,13 @@ user-info {
   /* background: #f29ce4; */
 
 }
+/* .menu li:hover {
+  background: cyan;
+} */
 
 .container .user .item-1 {
   display: flex;
   justify-content: end;
-  padding-right: 35px;
   align-items: center;
 
 }
@@ -209,7 +227,7 @@ user-info {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(255, 255, 255) , rgb(76, 178, 192));
+  background: #f8a8f5;
   margin: 10px;
 }
 
@@ -223,30 +241,29 @@ user-info {
 
 .container .user h5 {
   color: rgb(0, 0, 0);
-  font-size: 15px;
-  margin-top: 5px;
 
 }
 
 .container .user .item-3 {
   display: grid;
   place-items: center;
+  margin-bottom: 30px;
 
 
 
 }
 
 .container .user .item-3 .box {
-  height: 100px;
-  width: 95%;
-  background: linear-gradient(rgb(255, 255, 255) , rgb(76, 178, 192));
+  height: 80px;
+  width: 100%;
+  background: #f8a8f5;
   border-radius: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
 }
 
-.container .user .item-3 .box  .ball{
+.container .user .item-3 .box  .ball {
   background: #fff;
   border-radius: 50px;
   width: 45px;
@@ -256,19 +273,95 @@ user-info {
 
 }
 
-.container .user .item-3 .box  .ball i{
+.container .user .item-3 .box  .ball i {
   font-size: 24px;
-  color: #06b7ec;
+  color: #d906ec;
 
+}
+
+.container .user .item-3 .box .box-1 {
+  border-right: 2px solid #fffdfd;
+
+}
+
+.container .user .item-3 .box .box-1 .text {
+  color: orange;
+}
+
+.container .user .item-3 .box .box-2 .ball i{
+  color: rgb(80, 204, 187);
+}
+
+.container .user .item-3 .box .box-2  {
+  color: purple;
 }
 
 .container .user .item-3 .box .box-1, .container .user .item-3 .box  .box-2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  padding: 10px;
 
 }
-/* .menu li:hover {
-  background: cyan;
-} */
+
+.container .user .item-4 .user-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+
+
+}
+
+.container .user .item-4 .task-list {
+  background: #cfa5f8;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 15px;
+  gap: 15px;
+  margin-bottom: 15px;
+  height: 40px;
+}
+
+.container .user .item-4 .task-list .number {
+  width: 40px;
+  height: 40px;
+  background: #ffffff2e;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.container .user .item-4 .task-list:nth-child(3) {
+  background: #cfa5f8;
+}
+
+.container .user .item-4 .recent-task {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+.container .user .item-4 .recent-task .status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .user .item-4 .recent-task .ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #65faff;
+
+}
+
+.container .user .item-4 .recent-task .time {
+  font-size: 12px;
+  color: #6555e2;
+  font-weight: 400;
+}
+
