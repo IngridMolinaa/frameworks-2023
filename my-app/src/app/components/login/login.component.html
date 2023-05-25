@@ -1,35 +1,40 @@
-    <div class="container">
-    <div class="login">
-        <h2>Sign in</h2>
+<div class="container">
+  <div class="login">
+    <h2>Sign in</h2>
 
-        <div *ngIf="isError" class="error">
-            <i class='bx bx-heart-circle' ></i>
-            <span>User or password incorrect!</span>
-    
-    
-        </div>
-
-    <div class="input">
-        <i class='bx bx-envelope-open'></i>
-        <input type="text" name="email" id="email" placeholder="E-mail">
-
-    </div>    
-
-    <div class="input">
-        <i class='bx bxs-lock' ></i>
-        <input type="password" name="password" id="password" placeholder="Password">
-        <i class='bx bx-low-vision' ></i>
+    <div *ngIf="isError" class="error">
+      <i class="bx bx-heart-circle"></i>
+      <span>User or password incorrect!</span>
     </div>
-    
+    <div *ngIf="isAprovado" class="isAprovado">
+      <i class="bx bx-heart-circle"></i>
+      <span>Login Ok!</span>
+    </div>
+
+    <div class="input">
+      <i class="bx bx-envelope-open"></i>
+      <input type="text" name="email" id="email" placeholder="E-mail" />
+    </div>
+
+    <div class="input">
+      <i class="bx bxs-lock"></i>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+      <i class="bx bx-low-vision"></i>
+    </div>
+
     <div class="remember">
-    <div>
-        <input type="checkbox" name="remember" id="remember">
+      <div>
+        <input type="checkbox" name="remember" id="remember" />
         <h4>Remember me</h4>
+      </div>
+      <h4>Forgot password?</h4>
     </div>
-        <h4>Forgot password?</h4>
-    </div>
-        <button (click)="login()">SING IN</button>
-        <h3>Don't have an account? Creat</h3>
-    </div>
-
+    <button (click)="login()">SING IN</button>
+    <h3>Don't have an account? Creat</h3>
+  </div>
 </div>

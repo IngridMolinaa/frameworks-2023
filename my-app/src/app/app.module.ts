@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { LoginComponent } from './components/login/login.component';
 import { GridComponent } from './components/grid/grid.component';
-import { CadastroComponent } from './component/cadastro/cadastro.component';
+
 import { FormsModule } from '@angular/forms';
-import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +20,10 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
     GridComponent,
     CadastroComponent,
     PageNotFoundComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

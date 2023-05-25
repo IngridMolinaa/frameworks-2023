@@ -54,7 +54,7 @@
 i {
     font-size: 25px;
     color:rgb(226, 130, 210);
-    
+
 
 }
 
@@ -95,7 +95,7 @@ button {
 button:hover {
     filter: brightness(125%);
 
-    
+
 }
 
 .error {
@@ -115,3 +115,19 @@ button:hover {
     margin-right: 5px;
 
 }
+
+.isAprovado{
+  border: 2px solid green;
+  margin-top: 5px;
+  width: 280px;
+  background: blue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+ }
+
+
+ span {
+  color: black;
+  font-size: 15px;
+ }
