@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { TaskComponent } from './components/task/task.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     CadastroComponent,
     PageNotFoundComponent,
     DashboardComponent,
+    TaskComponent,
+    UserComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
