@@ -1,47 +1,57 @@
 <div class="container">
-
   <form action="">
-    <div class="form">
-
-      
+    <div class="task">
       <label for="txtNome">Task</label>
-      <input type="text" name="email" id="email" placeholder="E-mail" />
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Digite o nome da Tarefa"
+        [formControl]="task"
+      />
 
+      <label for="txtNome">Descrição</label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="descricao"
+        [formControl]="descricao"
+      />
 
+      <label for="txtNome">Responsável</label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="responsavel"
+        [formControl]="responsavel"
+      />
 
-      <label for="txtNome">Task</label>
-      <input type="text" name="email" id="email" placeholder="E-mail" />
+      <label for="txtNome">Data Início</label>
+      <input
+        type="date"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+        [formControl]="dt_inicio"
+      />
 
+      <label for="txtNome">Data Término</label>
+      <input
+        type="date"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+        [formControl]="dt_fim"
+      />
 
+      <div></div>
 
-      <label for="txtNome">Task</label>
-      <input type="text" name="email" id="email" placeholder="E-mail" />
-
-
-
-      <label for="txtNome">Task</label>
-      <input type="text" name="email" id="email" placeholder="E-mail" />
-
-
-      <label for="txtNome">Task</label>
-      <input type="text" name="email" id="email" placeholder="E-mail" />
-
-
-
-
-
-
-
+      <div class="button">
+        <button>Cancelar</button>
+        <button (click)="addTask()">Cadastrar</button>
+      </div>
     </div>
-
-  
-  
-  
-  
   </form>
-
-      </div>-
-  
-    
-
-
+</div>
