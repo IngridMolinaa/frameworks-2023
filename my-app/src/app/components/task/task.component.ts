@@ -1,3 +1,4 @@
+import { Task } from './../../model/task';
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
@@ -8,23 +9,45 @@ import { FormControl } from '@angular/forms';
 })
 export class TaskComponent {
 
-  tasks = []
-
-  task = new FormControl ('')
+  nome = new FormControl ('')
   descricao = new FormControl('')
   responsavel = new FormControl('')
   dt_inicio = new FormControl('')
   dt_fim = new FormControl('')
 
+  tasks: Task[] = []
+
+
   addTask () {
-    console.log(this.task.value)
-    console.log(this.descricao.value)
-    console.log(this.responsavel.value)
-    console.log(this.dt_inicio.value)
-    console.log(this.dt_fim.value)
+    let t = this.dataToObject();
+    this.tasks.push(t)
+    console.log(t);
+    this.LimparForm();
   }
 
-removeTask(){}
+
+dataToObject() {
+  let task = new Task(); //Criar um Objeto
+  task.nome = this.nome.value!;
+  task.descricao = this.descricao.value!;
+  task.responsavel = this.responsavel.value!;
+  task.dt_inicio = Number(this.dt_inicio.value)!;
+  task.dt_fim = Number(this.dt_fim.value)!;
+
+  return task;
+
+
+}
+
+LimparForm(){
+  this.nome.setValue('');
+  this.descricao.setValue('');
+  this.responsavel.setValue('');
+  this.dt_inicio.setValue('');
+  this.dt_fim.setValue('');
+}
+
+
 }
 
 
